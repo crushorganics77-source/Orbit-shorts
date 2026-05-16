@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shop — TEMP | Skyline · Waves · Flux Collections</title>
+<meta name="description" content="Shop TEMP Drop 001 — 18 premium basketball shorts across three collections: Skyline, Waves, and Flux. Bold all-over patterns on performance mesh." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://temp-shorts.example.com/shop.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Shop — TEMP" />
+<meta property="og:description" content="Three collections of bold all-over print basketball shorts." />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0F'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23F4F4F0' font-family='serif' font-style='italic' font-size='18'%3ET%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Allison&family=Unbounded:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --bg:#08080C; --bg-2:#0F0F16; --bg-3:#16161F;
+  --cream:#F4F4F0; --cream-dim:#D4D4CC; --mist:#8E8E98;
+  --gold:#D4B373; --lav:#B8A4FF; --blue:#3A5FFF;
+  --line:rgba(244,244,240,0.08); --line-2:rgba(244,244,240,0.18);
+  --display:'Unbounded',system-ui,sans-serif;
+  --body:'Sora',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --script:'Allison',cursive;
+  --ease:cubic-bezier(0.22,1,0.36,1);
+  --gutter:clamp(1.25rem,4vw,3rem);
+  --container:1320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--cream);-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font-family:var(--body);font-size:16px;line-height:1.55;background:var(--bg);overflow-x:hidden;position:relative}
+::selection{background:var(--lav);color:var(--bg)}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-0.025em;line-height:1}
+.script{font-family:var(--script);font-weight:400;letter-spacing:0;line-height:0.85}
+.script-ac{font-family:var(--script);font-weight:400;font-size:1.4em;color:var(--lav);letter-spacing:0;line-height:0.7;display:inline-block;transform:translateY(0.1em)}
+
+#grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+#cursor{position:fixed;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle at center,rgba(184,164,255,0.12),rgba(58,95,255,0.05) 40%,transparent 65%);pointer-events:none;z-index:2;transform:translate(-50%,-50%);mix-blend-mode:screen;filter:blur(50px);will-change:transform}
+@media(hover:none){#cursor{display:none}}
+body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at center,transparent 50%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:3}
+main,nav,footer{position:relative;z-index:5}
+#progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--lav),var(--gold));z-index:200;width:0%}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem var(--gutter);display:flex;align-items:center;justify-content:space-between;transition:all 0.4s var(--ease);background:rgba(8,8,12,0.72);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid var(--line)}
+.brand{font-family:var(--script);font-weight:400;font-size:2rem;color:var(--cream);text-decoration:none;line-height:0.7;letter-spacing:0;display:flex;align-items:baseline;gap:0.4rem}
+.brand-tag{font-family:var(--mono);font-size:9px;letter-spacing:0.24em;text-transform:uppercase;color:var(--mist);font-weight:500;align-self:center;padding-top:6px}
+.nav-links{display:flex;gap:2.25rem;list-style:none}
+.nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--cream-dim);text-decoration:none;transition:color 0.3s var(--ease)}
+.nav-links a:hover,.nav-links a.active{color:var(--lav)}
+.nav-cta{font-family:var(--mono);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--bg);background:var(--cream);padding:0.7rem 1.3rem;border-radius:999px;text-decoration:none;transition:all 0.3s var(--ease)}
+.nav-cta:hover{background:var(--lav);transform:translateY(-1px)}
+@media(max-width:768px){.nav-links{display:none}}
+
+/* SHOP HERO */
+.shop-hero{padding:9rem var(--gutter) 4rem;text-align:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.shop-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(184,164,255,0.1),transparent 60%);pointer-events:none}
+.shop-hero-content{position:relative;z-index:2;max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:1.25rem;align-items:center}
+.shop-hero .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--lav);font-weight:500;display:inline-flex;align-items:center;gap:0.8rem}
+.shop-hero .eyebrow::before,.shop-hero .eyebrow::after{content:'';width:30px;height:1px;background:var(--lav);opacity:0.5}
+.shop-hero h1{font-size:clamp(3rem,8vw,7rem);font-weight:600;letter-spacing:-0.04em;color:var(--cream)}
+.shop-hero p{color:var(--mist);max-width:560px;font-size:1.05rem}
+
+/* COLLECTION NAV */
+.coll-nav{display:flex;gap:0;justify-content:center;border-block:1px solid var(--line);background:var(--bg-2);position:sticky;top:74px;z-index:50;flex-wrap:wrap}
+.coll-nav a{flex:1;min-width:140px;text-align:center;padding:1.2rem 1.5rem;font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--cream-dim);text-decoration:none;font-weight:500;transition:all 0.3s var(--ease);border-right:1px solid var(--line);position:relative}
+.coll-nav a:last-child{border-right:none}
+.coll-nav a:hover{color:var(--cream);background:var(--bg-3)}
+.coll-nav a .ct{display:block;font-size:9px;letter-spacing:0.16em;color:var(--mist);margin-top:0.3rem;font-weight:400}
+
+/* COLLECTION SECTION */
+.coll-section{padding:clamp(5rem,10vw,9rem) var(--gutter);position:relative;overflow:hidden}
+.coll-section::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0}
+#skyline::before{background:radial-gradient(circle at 20% 30%,rgba(80,100,180,0.1),transparent 50%),radial-gradient(circle at 80% 70%,rgba(244,244,240,0.04),transparent 50%)}
+#waves::before{background:radial-gradient(circle at 30% 50%,rgba(58,95,255,0.12),transparent 55%),radial-gradient(circle at 70% 20%,rgba(11,31,92,0.2),transparent 55%)}
+#flux::before{background:radial-gradient(circle at 60% 40%,rgba(184,164,255,0.12),transparent 55%),radial-gradient(circle at 30% 80%,rgba(91,58,156,0.15),transparent 55%)}
+
+.coll-head{max-width:var(--container);margin:0 auto 4rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end;position:relative;z-index:2}
+@media(max-width:760px){.coll-head{grid-template-columns:1fr}}
+.coll-head-l{display:flex;flex-direction:column;gap:1rem}
+.coll-head-l .num{font-family:var(--mono);font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--lav);font-weight:500}
+.coll-head-l h2{font-size:clamp(3rem,8vw,7rem);font-weight:700;letter-spacing:-0.04em;color:var(--cream);line-height:0.9}
+.coll-head-l h2 .script-ac{font-family:var(--script);font-weight:400;font-size:1.2em;color:var(--lav);letter-spacing:0;line-height:0.7;display:inline-block;transform:translateY(0.08em)}
+.coll-head-r{display:flex;flex-direction:column;gap:1rem;justify-self:end;text-align:right;max-width:380px}
+@media(max-width:760px){.coll-head-r{justify-self:start;text-align:left}}
+.coll-head-r p{color:var(--mist);font-size:1.05rem;line-height:1.6}
+.coll-head-r .meta{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--cream-dim)}
+
+/* PRODUCT GRID */
+.products{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;position:relative;z-index:2}
+@media(max-width:880px){.products{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.products{grid-template-columns:1fr}}
+.product{display:flex;flex-direction:column;gap:1rem;cursor:pointer;text-decoration:none;color:inherit;opacity:0;transform:translateY(40px);transition:opacity 0.7s var(--ease),transform 0.7s var(--ease)}
+.product.in{opacity:1;transform:translateY(0)}
+.product-img{aspect-ratio:4/5;background:var(--bg-2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;transition:all 0.4s var(--ease)}
+.product-img svg{width:82%;height:auto;position:relative;z-index:2;filter:drop-shadow(0 20px 40px rgba(0,0,0,0.5));transition:transform 0.5s var(--ease)}
+.product:hover .product-img{border-color:var(--lav)}
+.product:hover .product-img svg{transform:scale(1.05) rotate(-1.5deg)}
+.product-tag{position:absolute;top:1rem;left:1rem;font-family:var(--mono);font-size:9px;letter-spacing:0.18em;text-transform:uppercase;padding:0.4rem 0.7rem;font-weight:500;z-index:3;background:rgba(8,8,12,0.7);color:var(--cream);backdrop-filter:blur(10px);border:1px solid var(--line-2);border-radius:2px}
+.product-tag.lav{background:var(--lav);color:var(--bg);border:none}
+.product-tag.gold{background:var(--gold);color:var(--bg);border:none}
+.product-info{display:flex;justify-content:space-between;align-items:baseline;padding:0 0.25rem;gap:1rem}
+.product-info-l{display:flex;flex-direction:column;gap:0.3rem}
+.product-name{font-family:var(--display);font-size:1.2rem;font-weight:600;letter-spacing:-0.02em;color:var(--cream)}
+.product-meta{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--mist)}
+.product-price{font-family:var(--mono);font-size:0.95rem;color:var(--lav);font-weight:500;white-space:nowrap}
+
+/* DIVIDER between collections */
+.coll-divider{height:1px;background:var(--line);max-width:var(--container);margin:0 auto;position:relative}
+.coll-divider::before{content:'';position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:6px;height:3px;background:var(--lav)}
+
+/* FOOTER */
+footer{padding:4rem var(--gutter) 2rem;background:var(--bg-2);border-top:1px solid var(--line);margin-top:4rem}
+.footer-grid{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:4rem}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}}
+.footer-brand p{color:var(--mist);font-size:0.9rem;max-width:280px;line-height:1.6;margin-top:1rem}
+.footer-col h4{font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--lav);margin-bottom:1.5rem;font-weight:500}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.75rem}
+.footer-col a{color:var(--cream-dim);text-decoration:none;font-size:0.9rem;transition:color 0.3s var(--ease)}
+.footer-col a:hover{color:var(--cream)}
+.footer-bottom{max-width:var(--container);margin:0 auto;padding-top:2rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:var(--mono);font-size:10px;letter-spacing:0.14em;color:var(--mist);text-transform:uppercase}
+
+@media(prefers-reduced-motion:reduce){*{animation-duration:0.01ms !important;transition-duration:0.01ms !important}}
+</style>
+</head>
+<body>
+
+<div id="grain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<nav id="nav">
+  <a href="index.html" class="brand">Temp <span class="brand-tag">/ EST. 2026</span></a>
+  <ul class="nav-links">
+    <li><a href="shop.html" class="active">Shop</a></li>
+    <li><a href="#skyline">Skyline</a></li>
+    <li><a href="#waves">Waves</a></li>
+    <li><a href="#flux">Flux</a></li>
+    <li><a href="index.html#faq">FAQ</a></li>
+  </ul>
+  <a href="index.html" class="nav-cta">← Home</a>
+</nav>
+
+<main>
+
+<section class="shop-hero">
+  <div class="shop-hero-content">
+    <span class="eyebrow">Drop 001 — Summer '26</span>
+    <h1>The full <span class="script-ac">rotation.</span></h1>
+    <p>Eighteen designs across three collections. Premium mesh, court-engineered fit, bold all-over patterns.</p>
+  </div>
+</section>
+
+<nav class="coll-nav" aria-label="Collection navigation">
+  <a href="#skyline">Skyline <span class="ct">01 / 6 designs</span></a>
+  <a href="#waves">Waves <span class="ct">02 / 6 designs</span></a>
+  <a href="#flux">Flux <span class="ct">03 / 6 designs</span></a>
+</nav>
+
+<!-- ============ SKYLINE COLLECTION ============ -->
+<section id="skyline" class="coll-section">
+  <div class="coll-head">
+    <div class="coll-head-l">
+      <span class="num">— 01 / Collection</span>
+      <h2>SKYLINE</h2>
+    </div>
+    <div class="coll-head-r">
+      <p>Cityscapes printed across performance mesh. Night sketches, sunset palms, mountain horizons. <span class="script-ac">Wear your city.</span></p>
+      <span class="meta">6 designs · From $58</span>
+    </div>
+  </div>
+
+  <div class="products">
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <span class="product-tag lav">Best Seller</span>
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Night skyline shorts">
+          <rect width="280" height="320" fill="#0A0A0F"/>
+          <circle cx="220" cy="60" r="14" fill="#F4F4F0" opacity="0.9"/>
+          <g fill="#F4F4F0" opacity="0.5"><circle cx="40" cy="50" r="0.8"/><circle cx="100" cy="35" r="0.8"/><circle cx="160" cy="60" r="0.8"/><circle cx="240" cy="40" r="0.8"/><circle cx="60" cy="100" r="0.8"/></g>
+          <path d="M 0 320 L 0 200 L 20 200 L 20 180 L 40 180 L 40 220 L 60 220 L 60 160 L 80 160 L 80 140 L 100 140 L 100 190 L 120 190 L 120 150 L 140 150 L 140 180 L 160 180 L 160 130 L 180 130 L 180 170 L 200 170 L 200 210 L 220 210 L 220 190 L 240 190 L 240 220 L 260 220 L 260 200 L 280 200 L 280 320 Z" fill="#F4F4F0"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#0A0A0F" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#0A0A0F" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <circle cx="130" cy="97" r="2" fill="#F4F4F0"/><circle cx="150" cy="97" r="2" fill="#F4F4F0"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <circle cx="215" cy="245" r="14" fill="#F4F4F0"/>
+          <text x="215" y="252" text-anchor="middle" fill="#0A0A0F" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#0A0A0F"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Night</span><span class="product-meta">Skyline · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Azure skyline shorts">
+          <defs><linearGradient id="az" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE5FF"/><stop offset="1" stop-color="#1E40FF"/></linearGradient></defs>
+          <rect width="280" height="320" fill="url(#az)"/>
+          <path d="M 0 320 L 0 220 L 20 220 L 20 200 L 40 200 L 40 240 L 60 240 L 60 180 L 80 180 L 80 160 L 100 160 L 100 210 L 120 210 L 120 170 L 140 170 L 140 200 L 160 200 L 160 150 L 180 150 L 180 190 L 200 190 L 200 230 L 220 230 L 220 210 L 240 210 L 240 240 L 260 240 L 260 220 L 280 220 L 280 320 Z" fill="#1E40FF"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#1E40FF" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#1E40FF" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#DCE5FF"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Azure</span><span class="product-meta">Skyline · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <span class="product-tag">Limited</span>
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Sunset skyline shorts">
+          <defs><linearGradient id="sn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB6E1"/><stop offset="0.5" stop-color="#FF8AB0"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient></defs>
+          <rect width="280" height="320" fill="url(#sn)"/>
+          <path d="M 0 320 L 0 230 L 40 230 L 40 220 L 60 220 L 60 200 L 80 200 L 80 180 L 100 180 L 100 210 L 120 210 L 120 190 L 140 190 L 140 170 L 160 170 L 160 200 L 180 200 L 180 220 L 200 220 L 200 240 L 280 240 L 280 320 Z" fill="#0A0A0F"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#FF8AB0" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#FF8AB0" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#0A0A0F"/>
+          <rect x="257" y="58" width="3" height="262" fill="#0A0A0F"/>
+          <rect x="20" y="312" width="240" height="8" fill="#0A0A0F"/>
+          <circle cx="215" cy="265" r="14" fill="#F4F4F0"/>
+          <text x="215" y="272" text-anchor="middle" fill="#FF8AB0" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#FFB6E1"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Sunset</span><span class="product-meta">Skyline · 9"</span></div>
+        <span class="product-price">$62</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Sketch skyline shorts">
+          <rect width="280" height="320" fill="#F5E9D3"/>
+          <g stroke="#1A1A22" stroke-width="0.6" fill="none" opacity="0.7">
+            <path d="M 0 250 L 0 180 L 20 180 L 25 175 L 30 180 L 30 160 L 50 160 L 55 155 L 60 160 L 60 140 L 80 140 L 80 130 L 100 130 L 100 145 L 120 145 L 125 140 L 130 145 L 130 125 L 150 125 L 150 135 L 170 135 L 170 120 L 190 120 L 190 140 L 210 140 L 210 160 L 230 160 L 230 145 L 250 145 L 250 165 L 280 165 L 280 250 Z"/>
+          </g>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F5E9D3" stroke="#1A1A22" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#1A1A22" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#1A1A22"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#FAFAF7"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Sketch</span><span class="product-meta">Skyline · 9"</span></div>
+        <span class="product-price">$62</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <span class="product-tag lav">New</span>
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Peak skyline shorts">
+          <defs><linearGradient id="pk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F4F0"/><stop offset="1" stop-color="#0B1F5C"/></linearGradient></defs>
+          <rect width="280" height="320" fill="url(#pk)"/>
+          <path d="M 0 250 L 50 180 L 90 220 L 140 150 L 180 200 L 220 160 L 280 230 L 280 320 L 0 320 Z" fill="#4A6FA5" opacity="0.85"/>
+          <path d="M 0 280 L 0 240 L 20 240 L 20 220 L 50 220 L 50 200 L 80 200 L 80 230 L 110 230 L 110 210 L 140 210 L 140 240 L 170 240 L 170 220 L 200 220 L 200 250 L 230 250 L 230 235 L 260 235 L 280 250 L 280 320 Z" fill="#0B1F5C"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#0B1F5C" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#0B1F5C" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#0B1F5C"/>
+          <circle cx="215" cy="265" r="14" fill="#F4F4F0"/>
+          <text x="215" y="272" text-anchor="middle" fill="#0B1F5C" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#F4F4F0"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Peak</span><span class="product-meta">Skyline · 9"</span></div>
+        <span class="product-price">$62</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Bloom skyline shorts">
+          <rect width="280" height="320" fill="#FAFAF7"/>
+          <g stroke="#7C2D5C" stroke-width="1.5" fill="none"><path d="M 20 80 Q 60 60, 100 90 Q 120 100, 150 70"/><path d="M 230 100 Q 200 80, 170 110 Q 150 130, 130 110"/></g>
+          <g fill="#FFB6E1"><circle cx="40" cy="80" r="4"/><circle cx="80" cy="70" r="4"/><circle cx="120" cy="90" r="4"/><circle cx="200" cy="100" r="4"/><circle cx="170" cy="110" r="4"/><circle cx="60" cy="110" r="3"/></g>
+          <g fill="#FF3D8A"><circle cx="55" cy="85" r="2"/><circle cx="95" cy="80" r="2"/><circle cx="135" cy="95" r="2"/><circle cx="215" cy="105" r="2"/><circle cx="185" cy="115" r="2"/></g>
+          <path d="M 0 320 L 0 240 L 30 240 L 30 220 L 60 220 L 60 200 L 90 200 L 90 230 L 120 230 L 120 210 L 150 210 L 150 240 L 180 240 L 180 220 L 210 220 L 210 250 L 240 250 L 240 230 L 280 230 L 280 320 Z" fill="#7C2D5C" opacity="0.4"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#FFB6E1" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#FF3D8A" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#FFB6E1"/>
+          <rect x="257" y="58" width="3" height="262" fill="#FFB6E1"/>
+          <rect x="20" y="312" width="240" height="8" fill="#FFB6E1"/>
+          <circle cx="65" cy="200" r="14" fill="#FFB6E1"/>
+          <text x="65" y="207" text-anchor="middle" fill="#F4F4F0" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#F2F2EC"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Bloom</span><span class="product-meta">Skyline · 9"</span></div>
+        <span class="product-price">$62</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="coll-divider"></div>
+
+<!-- ============ WAVES COLLECTION ============ -->
+<section id="waves" class="coll-section">
+  <div class="coll-head">
+    <div class="coll-head-l">
+      <span class="num">— 02 / Collection</span>
+      <h2>WAVES</h2>
+    </div>
+    <div class="coll-head-r">
+      <p>Ocean prints across the mesh. Great Wave studies, stormy nights, calm tides. <span class="script-ac">Built for after-the-game.</span></p>
+      <span class="meta">6 designs · From $58</span>
+    </div>
+  </div>
+
+  <div class="products">
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <span class="product-tag lav">Best Seller</span>
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Great Wave shorts">
+          <defs><pattern id="gw" x="0" y="0" width="60" height="40" patternUnits="userSpaceOnUse">
+            <rect width="60" height="40" fill="#F4F4F0"/>
+            <path d="M 0 22 Q 15 6, 30 22 T 60 22" stroke="#1E40FF" stroke-width="2.5" fill="none"/>
+            <path d="M 0 32 Q 15 18, 30 32 T 60 32" stroke="#1E40FF" stroke-width="1.5" fill="none" opacity="0.5"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#gw)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#1E40FF" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#1E40FF" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#1E40FF"/>
+          <circle cx="215" cy="245" r="14" fill="#F4F4F0"/>
+          <text x="215" y="252" text-anchor="middle" fill="#1E40FF" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#F4F4F0"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Great</span><span class="product-meta">Waves · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Storm waves shorts">
+          <defs><pattern id="st" x="0" y="0" width="80" height="50" patternUnits="userSpaceOnUse">
+            <rect width="80" height="50" fill="#0B1F5C"/>
+            <path d="M 0 28 Q 20 5, 40 28 T 80 28" stroke="#F4F4F0" stroke-width="3" fill="none"/>
+            <path d="M 0 40 Q 20 25, 40 40 T 80 40" stroke="#F4F4F0" stroke-width="1.5" fill="none" opacity="0.6"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#st)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#0B1F5C" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#0B1F5C" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <circle cx="215" cy="245" r="14" fill="#F4F4F0"/>
+          <text x="215" y="252" text-anchor="middle" fill="#0B1F5C" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#0B1F5C"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Storm</span><span class="product-meta">Waves · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <span class="product-tag">New</span>
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Calm waves shorts">
+          <defs><pattern id="cm" x="0" y="0" width="60" height="40" patternUnits="userSpaceOnUse">
+            <rect width="60" height="40" fill="#A8E5DC"/>
+            <path d="M 0 22 Q 15 8, 30 22 T 60 22" stroke="#F4F4F0" stroke-width="3" fill="none"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#cm)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#2A8B7E" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#2A8B7E" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#F4F4F0"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Calm</span><span class="product-meta">Waves · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Mono waves shorts">
+          <defs><pattern id="mn" x="0" y="0" width="80" height="50" patternUnits="userSpaceOnUse">
+            <rect width="80" height="50" fill="#0A0A0F"/>
+            <path d="M 0 28 Q 20 5, 40 28 T 80 28" stroke="#F4F4F0" stroke-width="3.5" fill="none"/>
+            <path d="M 0 40 Q 20 25, 40 40 T 80 40" stroke="#F4F4F0" stroke-width="2" fill="none" opacity="0.5"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#mn)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#0A0A0F" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#0A0A0F" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#0A0A0F"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Mono</span><span class="product-meta">Waves · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <span class="product-tag lav">Drop 001</span>
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Tide waves shorts">
+          <defs><linearGradient id="td" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE5FF"/><stop offset="1" stop-color="#1E40FF"/></linearGradient></defs>
+          <rect width="280" height="320" fill="url(#td)"/>
+          <g stroke="#F4F4F0" stroke-width="2" fill="none" opacity="0.7"><path d="M 0 120 Q 70 100, 140 120 T 280 120"/><path d="M 0 160 Q 70 140, 140 160 T 280 160"/><path d="M 0 200 Q 70 180, 140 200 T 280 200"/><path d="M 0 240 Q 70 220, 140 240 T 280 240"/></g>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#1E40FF" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#1E40FF" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#DCE5FF"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Tide</span><span class="product-meta">Waves · 9"</span></div>
+        <span class="product-price">$62</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Dusk waves shorts">
+          <defs><linearGradient id="dk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB6E1"/><stop offset="0.5" stop-color="#7C5CFF"/><stop offset="1" stop-color="#1E40FF"/></linearGradient></defs>
+          <rect width="280" height="320" fill="url(#dk)"/>
+          <g stroke="#F4F4F0" stroke-width="2.5" fill="none"><path d="M 0 180 Q 70 155, 140 180 T 280 180"/><path d="M 0 220 Q 70 195, 140 220 T 280 220" opacity="0.7"/><path d="M 0 260 Q 70 235, 140 260 T 280 260" opacity="0.5"/></g>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#7C5CFF" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#7C5CFF" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <circle cx="65" cy="200" r="14" fill="#F4F4F0"/>
+          <text x="65" y="207" text-anchor="middle" fill="#7C5CFF" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#FFB6E1"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Dusk</span><span class="product-meta">Waves · 9"</span></div>
+        <span class="product-price">$62</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="coll-divider"></div>
+
+<!-- ============ FLUX COLLECTION ============ -->
+<section id="flux" class="coll-section">
+  <div class="coll-head">
+    <div class="coll-head-l">
+      <span class="num">— 03 / Collection</span>
+      <h2>FLUX</h2>
+    </div>
+    <div class="coll-head-r">
+      <p>Abstract flowing patterns. Color theory in motion — swirls and brush strokes that read loud at a glance. <span class="script-ac">Motion in print.</span></p>
+      <span class="meta">6 designs · From $58</span>
+    </div>
+  </div>
+
+  <div class="products">
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <span class="product-tag lav">New</span>
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Swirl flux shorts">
+          <defs><pattern id="sw" x="0" y="0" width="120" height="80" patternUnits="userSpaceOnUse">
+            <rect width="120" height="80" fill="#DCE5FF"/>
+            <path d="M -20 30 Q 30 0, 60 40 Q 90 80, 140 50" stroke="#1E40FF" stroke-width="14" fill="none"/>
+            <path d="M -20 60 Q 30 30, 60 70 Q 90 110, 140 80" stroke="#F4F4F0" stroke-width="14" fill="none"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#sw)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#1E40FF" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#1E40FF" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <circle cx="215" cy="245" r="14" fill="#F4F4F0"/>
+          <text x="215" y="252" text-anchor="middle" fill="#1E40FF" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#F4F4F0"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Swirl</span><span class="product-meta">Flux · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Neon flux shorts">
+          <defs><pattern id="nn" x="0" y="0" width="120" height="80" patternUnits="userSpaceOnUse">
+            <rect width="120" height="80" fill="#FF8A3D"/>
+            <path d="M -20 30 Q 30 0, 60 40 Q 90 80, 140 50" stroke="#FFE6CC" stroke-width="14" fill="none"/>
+            <path d="M -20 60 Q 30 30, 60 70 Q 90 110, 140 80" stroke="#FF6B1A" stroke-width="10" fill="none"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#nn)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#FF6B1A" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#FF6B1A" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#FF8A3D"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Neon</span><span class="product-meta">Flux · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <span class="product-tag">Limited</span>
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Jade flux shorts">
+          <defs><pattern id="jd" x="0" y="0" width="120" height="80" patternUnits="userSpaceOnUse">
+            <rect width="120" height="80" fill="#4DD4C7"/>
+            <path d="M -20 30 Q 30 0, 60 40 Q 90 80, 140 50" stroke="#F4F4F0" stroke-width="14" fill="none"/>
+            <path d="M -20 60 Q 30 30, 60 70 Q 90 110, 140 80" stroke="#2A8B7E" stroke-width="10" fill="none"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#jd)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#2A8B7E" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#2A8B7E" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <circle cx="215" cy="245" r="14" fill="#F4F4F0"/>
+          <text x="215" y="252" text-anchor="middle" fill="#2A8B7E" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#4DD4C7"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Jade</span><span class="product-meta">Flux · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Blush flux shorts">
+          <defs><pattern id="bl" x="0" y="0" width="120" height="80" patternUnits="userSpaceOnUse">
+            <rect width="120" height="80" fill="#FFB6E1"/>
+            <path d="M -20 30 Q 30 0, 60 40 Q 90 80, 140 50" stroke="#FFE6F0" stroke-width="14" fill="none"/>
+            <path d="M -20 60 Q 30 30, 60 70 Q 90 110, 140 80" stroke="#FF8AB0" stroke-width="10" fill="none"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#bl)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#FF8AB0" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#FF8AB0" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#FFB6E1"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Blush</span><span class="product-meta">Flux · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Field flux shorts">
+          <defs><pattern id="fd" x="0" y="0" width="120" height="80" patternUnits="userSpaceOnUse">
+            <rect width="120" height="80" fill="#4A5D2A"/>
+            <path d="M -20 30 Q 30 0, 60 40 Q 90 80, 140 50" stroke="#7D9555" stroke-width="14" fill="none"/>
+            <path d="M -20 60 Q 30 30, 60 70 Q 90 110, 140 80" stroke="#EBE5D0" stroke-width="10" fill="none"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#fd)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#4A5D2A" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#4A5D2A" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <circle cx="215" cy="245" r="14" fill="#F4F4F0"/>
+          <text x="215" y="252" text-anchor="middle" fill="#4A5D2A" font-family="Unbounded" font-size="16" font-weight="800">T</text>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#4A5D2A"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Field</span><span class="product-meta">Flux · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+    <a href="#" class="product" data-reveal>
+      <div class="product-img">
+        <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" aria-label="Royal flux shorts">
+          <defs><pattern id="ry" x="0" y="0" width="120" height="80" patternUnits="userSpaceOnUse">
+            <rect width="120" height="80" fill="#9B7CC9"/>
+            <path d="M -20 30 Q 30 0, 60 40 Q 90 80, 140 50" stroke="#E5DCFF" stroke-width="14" fill="none"/>
+            <path d="M -20 60 Q 30 30, 60 70 Q 90 110, 140 80" stroke="#5B3A9C" stroke-width="10" fill="none"/>
+          </pattern></defs>
+          <rect width="280" height="320" fill="url(#ry)"/>
+          <rect x="20" y="20" width="240" height="38" fill="#F4F4F0"/>
+          <rect x="115" y="32" width="50" height="14" fill="#F4F4F0" stroke="#5B3A9C" stroke-width="0.5"/>
+          <text x="140" y="42" text-anchor="middle" fill="#5B3A9C" font-family="Unbounded" font-size="9" font-weight="700">TEMP</text>
+          <path d="M 130 58 Q 128 75, 130 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <path d="M 150 58 Q 152 75, 150 95" stroke="#F4F4F0" stroke-width="1.5" fill="none"/>
+          <rect x="20" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="257" y="58" width="3" height="262" fill="#F4F4F0"/>
+          <rect x="20" y="312" width="240" height="8" fill="#F4F4F0"/>
+          <path d="M 145 58 L 140 320 L 135 320 L 130 58 Z" fill="#9B7CC9"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <div class="product-info-l"><span class="product-name">Royal</span><span class="product-meta">Flux · 9"</span></div>
+        <span class="product-price">$58</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">Temp <span class="brand-tag">/ EST. 2026</span></a>
+      <p>Premium basketball shorts with bold all-over patterns. Three collections. Built for the court, worn everywhere else.</p>
+    </div>
+    <div class="footer-col"><h4>Collections</h4><ul><li><a href="#skyline">Skyline</a></li><li><a href="#waves">Waves</a></li><li><a href="#flux">Flux</a></li><li><a href="#">All Drop 001</a></li></ul></div>
+    <div class="footer-col"><h4>Support</h4><ul><li><a href="index.html#faq">FAQ</a></li><li><a href="#">Size Guide</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="#">Contact</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 TEMP</span><span>Privacy · Terms</span></div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+const cursor=document.getElementById('cursor');
+let mx=innerWidth/2,my=innerHeight/2,gx=mx,gy=my;
+addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+(function ac(){gx+=(mx-gx)*0.12;gy+=(my-gy)*0.12;cursor.style.transform=`translate(${gx}px,${gy}px) translate(-50%,-50%)`;requestAnimationFrame(ac)})();
+
+const progress=document.getElementById('progress');
+function updateUI(){const sy=scrollY;const docH=document.documentElement.scrollHeight-innerHeight;progress.style.width=(sy/docH*100)+'%'}
+addEventListener('scroll',updateUI,{passive:true});
+
+const revealEls=document.querySelectorAll('[data-reveal], .product');
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.15,rootMargin:'0px 0px -8% 0px'});
+revealEls.forEach(el=>io.observe(el));
+})();
+</script>
+
+</body>
+</html>
