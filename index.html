@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============ SEO ============ -->
+<title>ORBIT — Custom Basketball Shorts, Made-to-Order | Drop 001</title>
+<meta name="description" content="ORBIT designs and prints premium basketball shorts on demand. Bold colorways. Custom designs. Performance fabric. One of one — never restocked." />
+<meta name="keywords" content="custom basketball shorts, designer basketball shorts, premium basketball shorts, design your own basketball shorts, made to order basketball shorts" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://orbit-shorts.example.com/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ORBIT" />
+<meta property="og:title" content="ORBIT — Custom Basketball Shorts" />
+<meta property="og:description" content="Premium basketball shorts. Bold colorways. Made on demand. One of one." />
+<meta property="og:url" content="https://orbit-shorts.example.com/" />
+<meta property="og:image" content="https://orbit-shorts.example.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ORBIT — Custom Basketball Shorts" />
+<meta name="twitter:description" content="Premium basketball shorts. Bold colorways. Made on demand." />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050609'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23B6FE2C' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23B6FE2C'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"ORBIT","url":"https://orbit-shorts.example.com","description":"Custom basketball shorts, made-to-order."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"ORBIT Custom Basketball Shorts","brand":{"@type":"Brand","name":"ORBIT"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"58","highPrice":"72","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"1247"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How long until my shorts ship?","acceptedAnswer":{"@type":"Answer","text":"Every pair is made-to-order. Production 3-5 business days, plus 2-5 days US shipping."}},
+{"@type":"Question","name":"Can I design my own pair?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Designer Lab lets you customize colors, panels, and numbers. No minimums."}}]}
+</script>
+
+<style>
+:root {
+  --ink-0:#04050A; --ink-1:#0A0C14; --ink-2:#12151E; --ink-3:#1E2230;
+  --line:rgba(244,244,240,0.08); --line-2:rgba(244,244,240,0.16);
+  --mist:#F4F4F0; --mist-dim:#9095A4; --mist-mid:#BDC1CC;
+  --lime:#B6FE2C; --cyan:#4FE3FF; --magenta:#FF3D8A; --violet:#7C5CFF;
+  --orange:#FF8A3D; --pink:#FFB6E1; --sun:#FFE14F;
+  --display:'Unbounded',system-ui,sans-serif;
+  --body:'Sora',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --ease:cubic-bezier(0.22,1,0.36,1);
+  --ease-out:cubic-bezier(0.16,1,0.3,1);
+  --container:1280px;
+  --gutter:clamp(1.25rem,4vw,3rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--ink-0);color:var(--mist);-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font-family:var(--body);font-size:16px;line-height:1.6;background:var(--ink-0);overflow-x:hidden;position:relative}
+::selection{background:var(--lime);color:var(--ink-0)}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-0.025em;line-height:1}
+
+#stars{position:fixed;inset:0;z-index:0;pointer-events:none}
+#grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+#cursor{position:fixed;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle at center,rgba(182,254,44,0.13),rgba(79,227,255,0.05) 30%,transparent 60%);pointer-events:none;z-index:2;transform:translate(-50%,-50%);mix-blend-mode:screen;filter:blur(40px);will-change:transform}
+@media(hover:none){#cursor{display:none}}
+body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at center,transparent 50%,rgba(0,0,0,0.55) 100%);pointer-events:none;z-index:3}
+main,nav,footer{position:relative;z-index:5}
+
+#progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--lime),var(--cyan),var(--magenta));z-index:200;width:0%}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem var(--gutter);display:flex;align-items:center;justify-content:space-between;transition:all 0.4s var(--ease)}
+nav.scrolled{background:rgba(4,5,10,0.7);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:0.18em;display:flex;align-items:center;gap:0.6rem;text-decoration:none;color:var(--mist)}
+.brand-mark{width:20px;height:20px;border:1.5px solid var(--lime);border-radius:50%;position:relative;display:inline-block}
+.brand-mark::before{content:'';position:absolute;inset:5px;background:var(--lime);border-radius:50%;box-shadow:0 0 12px var(--lime)}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--mist-mid);text-decoration:none;transition:color 0.3s var(--ease)}
+.nav-links a:hover{color:var(--lime)}
+.nav-cta{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:var(--ink-0);background:var(--lime);padding:0.65rem 1.2rem;border-radius:999px;text-decoration:none;transition:all 0.3s var(--ease)}
+.nav-cta:hover{box-shadow:0 0 30px rgba(182,254,44,0.5);transform:translateY(-1px)}
+@media(max-width:768px){.nav-links{display:none}}
+
+.scene{position:relative;width:100%}
+.scene-inner{position:sticky;top:0;height:100vh;width:100%;overflow:hidden;display:flex;align-items:center;justify-content:center}
+
+/* ===== HERO ===== */
+#hero{height:320vh}
+.hero-bg-grid{position:absolute;inset:0;background-image:linear-gradient(to right,rgba(182,254,44,0.06) 1px,transparent 1px),linear-gradient(to bottom,rgba(79,227,255,0.05) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at center,black 30%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at center,black 30%,transparent 70%);will-change:transform,opacity}
+.hero-orb{position:absolute;border-radius:50%;pointer-events:none;filter:blur(100px);will-change:transform,opacity}
+.hero-orb.a{width:700px;height:700px;background:radial-gradient(circle,rgba(182,254,44,0.4),transparent 60%);top:-10%;left:-10%}
+.hero-orb.b{width:600px;height:600px;background:radial-gradient(circle,rgba(79,227,255,0.32),transparent 60%);bottom:-15%;right:-10%}
+.hero-orb.c{width:450px;height:450px;background:radial-gradient(circle,rgba(255,61,138,0.22),transparent 60%);top:40%;left:50%;transform:translateX(-50%)}
+.hero-rings{position:absolute;top:50%;left:50%;width:110vh;height:110vh;max-width:1000px;max-height:1000px;transform:translate(-50%,-50%);pointer-events:none;will-change:transform,opacity}
+.hero-ring{position:absolute;inset:0;border-radius:50%;border:1px solid var(--line-2)}
+.hero-ring.r1{animation:spin 80s linear infinite}
+.hero-ring.r2{inset:14%;border-color:rgba(182,254,44,0.18);animation:spin 110s linear infinite reverse}
+.hero-ring.r3{inset:28%;border-color:rgba(79,227,255,0.14);animation:spin 140s linear infinite}
+.hero-ring.r4{inset:42%;border-style:dashed;animation:spin 200s linear infinite reverse}
+.hero-ring::before{content:'';position:absolute;width:8px;height:8px;background:var(--lime);border-radius:50%;top:-4px;left:50%;transform:translateX(-50%);box-shadow:0 0 16px var(--lime),0 0 32px var(--lime)}
+.hero-ring.r2::before{background:var(--cyan);box-shadow:0 0 16px var(--cyan)}
+.hero-ring.r3::before{background:var(--magenta);box-shadow:0 0 14px var(--magenta)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.hero-content{position:relative;z-index:10;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.5rem;max-width:1100px;padding:0 var(--gutter);will-change:transform,opacity}
+.hero-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--mist-mid);display:inline-flex;align-items:center;gap:0.6rem;padding:0.5rem 1rem;border:1px solid var(--line-2);border-radius:999px;background:rgba(10,12,20,0.5);backdrop-filter:blur(10px)}
+.hero-eyebrow .dot{width:6px;height:6px;background:var(--lime);border-radius:50%;box-shadow:0 0 10px var(--lime);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(1.4)}}
+.hero-title{font-size:clamp(3rem,10vw,9rem);font-weight:700;letter-spacing:-0.045em;line-height:0.88}
+.hero-title em{font-style:normal;background:linear-gradient(180deg,var(--lime),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.hero-title .word{display:inline-block;will-change:transform,opacity}
+.hero-sub{font-size:clamp(1rem,1.5vw,1.2rem);color:var(--mist-mid);max-width:600px;line-height:1.6}
+.hero-ctas{display:flex;gap:1rem;margin-top:1rem;flex-wrap:wrap;justify-content:center}
+.btn{font-family:var(--mono);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;padding:1.1rem 2rem;border-radius:999px;border:none;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:0.6rem;transition:all 0.3s var(--ease)}
+.btn-primary{background:var(--lime);color:var(--ink-0);font-weight:700}
+.btn-primary:hover{box-shadow:0 0 40px rgba(182,254,44,0.5);transform:translateY(-2px)}
+.btn-secondary{background:rgba(244,244,240,0.04);color:var(--mist);border:1px solid var(--line-2);backdrop-filter:blur(10px)}
+.btn-secondary:hover{border-color:var(--mist);transform:translateY(-2px)}
+.btn .arr{transition:transform 0.3s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--mist-dim);display:flex;flex-direction:column;align-items:center;gap:0.5rem;z-index:10}
+.scroll-cue .line{width:1px;height:32px;background:linear-gradient(to bottom,var(--lime),transparent);animation:scroll-bob 2s ease-in-out infinite}
+@keyframes scroll-bob{0%,100%{transform:scaleY(1);transform-origin:top}50%{transform:scaleY(0.5);transform-origin:top}}
+
+.marquee{border-block:1px solid var(--line);padding:1.5rem 0;overflow:hidden;background:rgba(10,12,20,0.6);position:relative;z-index:5}
+.marquee-track{display:flex;gap:4rem;white-space:nowrap;animation:marquee 35s linear infinite;font-family:var(--display);font-size:clamp(1.5rem,3vw,2.5rem);font-weight:500;letter-spacing:-0.01em;color:var(--mist-dim);width:max-content}
+.marquee-track span{display:inline-flex;align-items:center;gap:4rem}
+.marquee-track .star{color:var(--lime);font-size:1.4rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ===== MANIFESTO ===== */
+#manifesto{height:300vh;background:var(--ink-0)}
+.manifesto-wrap{position:relative;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.manifesto-line{position:absolute;font-family:var(--display);font-size:clamp(2.5rem,9vw,9rem);font-weight:700;letter-spacing:-0.04em;line-height:0.9;width:90%;max-width:1200px;will-change:transform,opacity,filter;opacity:0;text-align:center}
+.manifesto-line .accent{background:linear-gradient(180deg,var(--lime),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.manifesto-line .accent-2{background:linear-gradient(180deg,var(--magenta),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.manifesto-bg{position:absolute;font-family:var(--display);font-size:clamp(10rem,30vw,24rem);font-weight:900;letter-spacing:-0.05em;color:rgba(244,244,240,0.025);pointer-events:none;white-space:nowrap;will-change:transform}
+
+/* ===== GALLERY ===== */
+#gallery{height:500vh;background:linear-gradient(180deg,var(--ink-0),var(--ink-1),var(--ink-0))}
+.gallery-inner{position:relative;width:100%;height:100vh;display:flex;flex-direction:column;padding:5rem 0 2rem}
+.gallery-head{text-align:center;padding:0 var(--gutter);margin-bottom:2rem}
+.gallery-head .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--lime);margin-bottom:1rem;display:inline-block}
+.gallery-head h2{font-size:clamp(2rem,5vw,4rem)}
+.gallery-head .sub{color:var(--mist-mid);margin-top:0.75rem;font-size:0.95rem}
+.h-track-wrap{flex:1;display:flex;align-items:center;overflow:hidden}
+.h-track{display:flex;gap:2rem;padding:0 12vw;will-change:transform}
+.product{flex-shrink:0;width:clamp(280px,32vw,420px);display:flex;flex-direction:column;gap:1rem}
+.product-art{aspect-ratio:4/5;border-radius:8px;background:var(--ink-2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;transition:transform 0.4s var(--ease),border-color 0.4s var(--ease)}
+.product-art::before{content:'';position:absolute;inset:0;background-image:linear-gradient(to right,rgba(244,244,240,0.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(244,244,240,0.04) 1px,transparent 1px);background-size:30px 30px;mask-image:radial-gradient(circle at center,black 30%,transparent 70%);-webkit-mask-image:radial-gradient(circle at center,black 30%,transparent 70%)}
+.product-art svg{width:70%;height:auto;position:relative;z-index:2;filter:drop-shadow(0 30px 60px rgba(0,0,0,0.5));transition:transform 0.5s var(--ease)}
+.product:hover .product-art{border-color:var(--lime)}
+.product:hover .product-art svg{transform:scale(1.06) rotate(-2deg)}
+.product-tag{position:absolute;top:1rem;left:1rem;font-family:var(--mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;padding:0.35rem 0.7rem;border-radius:4px;font-weight:700;z-index:3}
+.tag-lime{background:var(--lime);color:var(--ink-0)}
+.tag-cyan{background:var(--cyan);color:var(--ink-0)}
+.tag-mag{background:var(--magenta);color:var(--mist)}
+.tag-vio{background:var(--violet);color:var(--mist)}
+.tag-sun{background:var(--sun);color:var(--ink-0)}
+.tag-orange{background:var(--orange);color:var(--ink-0)}
+.product-info{display:flex;justify-content:space-between;align-items:baseline;padding:0 0.5rem}
+.product-info-l{display:flex;flex-direction:column;gap:0.25rem}
+.product-name{font-family:var(--display);font-size:1.1rem;font-weight:500}
+.product-meta{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--mist-dim)}
+.product-price{font-family:var(--mono);font-size:0.95rem;color:var(--lime)}
+.gallery-progress{padding:0 var(--gutter);display:flex;align-items:center;gap:1rem;font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--mist-dim)}
+.gp-bar{flex:1;height:1px;background:var(--line);position:relative;overflow:hidden}
+.gp-fill{position:absolute;inset:0;background:linear-gradient(90deg,var(--lime),var(--cyan));transform:scaleX(0);transform-origin:left;will-change:transform}
+
+/* ===== WHY ===== */
+#why{padding:clamp(5rem,10vw,9rem) var(--gutter);position:relative}
+.why-grid{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+@media(max-width:880px){.why-grid{grid-template-columns:1fr}}
+.why-sticky{position:sticky;top:10vh;align-self:start;height:fit-content;display:flex;flex-direction:column;gap:1.25rem}
+.why-sticky .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--lime)}
+.why-sticky h2{font-size:clamp(2.25rem,5vw,4rem)}
+.why-sticky p{color:var(--mist-mid);max-width:420px}
+.why-stack{display:flex;flex-direction:column;gap:1rem}
+.usp-card{padding:2.5rem;background:var(--ink-1);border:1px solid var(--line);border-radius:8px;display:flex;flex-direction:column;gap:1.25rem;transition:all 0.5s var(--ease);opacity:0;transform:translateY(40px)}
+.usp-card.in{opacity:1;transform:translateY(0)}
+.usp-card:hover{border-color:var(--line-2);background:var(--ink-2)}
+.usp-card .num{font-family:var(--mono);font-size:11px;letter-spacing:0.18em;color:var(--lime)}
+.usp-card .icon{font-family:var(--display);font-size:2.5rem;font-weight:700;color:var(--mist);line-height:1}
+.usp-card h3{font-size:1.4rem;font-weight:500}
+.usp-card p{font-size:0.95rem;color:var(--mist-mid);line-height:1.55}
+
+/* ===== STATS ===== */
+#stats{height:200vh;background:var(--ink-0)}
+.stats-wrap{position:relative;width:100%;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 var(--gutter)}
+.stats-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--lime);margin-bottom:2rem}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3rem;width:100%;max-width:var(--container);border-block:1px solid var(--line);padding-block:3rem}
+@media(max-width:720px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:2rem}}
+.stat{display:flex;flex-direction:column;gap:0.5rem}
+.stat-num{font-family:var(--display);font-size:clamp(2.5rem,7vw,5.5rem);font-weight:700;letter-spacing:-0.04em;color:var(--lime);line-height:1;font-variant-numeric:tabular-nums}
+.stat-label{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--mist-dim)}
+
+/* ===== CUSTOMIZER ===== */
+#customize{height:320vh;background:linear-gradient(180deg,var(--ink-0),var(--ink-1))}
+.cz-inner{position:relative;width:100%;height:100vh;overflow:hidden}
+.cz-bg{position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(79,227,255,0.08),transparent 50%),radial-gradient(circle at 20% 80%,rgba(182,254,44,0.1),transparent 50%);pointer-events:none}
+.cz-grid{max-width:var(--container);margin:0 auto;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding:0 var(--gutter);position:relative}
+@media(max-width:880px){.cz-grid{grid-template-columns:1fr}}
+.cz-text{position:relative}
+.cz-text .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--lime);margin-bottom:1rem;display:inline-block}
+.cz-text h2{font-size:clamp(2.25rem,5vw,4rem);margin-bottom:1.5rem}
+.cz-text h2 em{font-style:normal;background:linear-gradient(180deg,var(--lime),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.cz-steps{list-style:none;display:flex;flex-direction:column;gap:0.75rem;margin:1.5rem 0 2rem}
+.cz-steps li{font-family:var(--mono);font-size:12px;letter-spacing:0.06em;color:var(--mist-mid);padding:0.8rem 0;border-top:1px solid var(--line);display:flex;gap:1.25rem;transition:color 0.4s var(--ease),border-color 0.4s var(--ease)}
+.cz-steps li.active{color:var(--mist);border-top-color:var(--lime)}
+.cz-steps li .step-num{color:var(--mist-dim);transition:color 0.4s var(--ease)}
+.cz-steps li.active .step-num{color:var(--lime)}
+.cz-vis{position:relative;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.cz-rings{position:absolute;inset:0}
+.cz-rings svg{width:100%;height:100%}
+.cz-shorts{width:55%;position:relative;z-index:5;will-change:transform,filter}
+.cz-swatch{position:absolute;top:0;left:0;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:9px;letter-spacing:0.1em;font-weight:700;color:var(--ink-0);border:2px solid var(--ink-0);box-shadow:0 0 0 1px var(--line-2);will-change:transform}
+
+/* ===== REVIEWS ===== */
+#reviews{padding:clamp(5rem,10vw,9rem) var(--gutter)}
+.section-head{max-width:var(--container);margin:0 auto 4rem;display:flex;flex-direction:column;gap:1.25rem}
+.section-head .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--lime)}
+.section-head h2{font-size:clamp(2.25rem,5vw,4rem)}
+.reviews-grid{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.review{padding:2rem;background:var(--ink-1);border:1px solid var(--line);border-radius:6px;display:flex;flex-direction:column;gap:1.25rem;opacity:0;transform:translateY(40px);transition:opacity 0.8s var(--ease-out),transform 0.8s var(--ease-out),background 0.4s var(--ease)}
+.review.in{opacity:1;transform:translateY(0)}
+.review:hover{background:var(--ink-2)}
+.review-stars{color:var(--lime);font-size:1rem;letter-spacing:0.1em}
+.review-text{font-size:1.05rem;line-height:1.55;color:var(--mist);font-weight:300}
+.review-author{display:flex;align-items:center;gap:0.75rem;margin-top:auto}
+.author-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--lime),var(--cyan));display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;color:var(--ink-0);font-size:0.85rem}
+.author-name{font-weight:500;font-size:0.95rem}
+.author-meta{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--mist-dim);text-transform:uppercase}
+.author-meta .verified{color:var(--lime)}
+
+/* ===== FAQ ===== */
+#faq{padding:4rem var(--gutter) clamp(5rem,10vw,9rem)}
+.faq-wrap{max-width:900px;margin:0 auto}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line);padding:1.75rem 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;gap:2rem;font-family:var(--display);font-size:clamp(1.1rem,1.7vw,1.4rem);font-weight:500;letter-spacing:-0.01em;transition:color 0.3s var(--ease)}
+.faq-item:hover .faq-q{color:var(--lime)}
+.faq-toggle{font-family:var(--mono);font-size:1.5rem;color:var(--lime);transition:transform 0.4s var(--ease);flex-shrink:0}
+.faq-item.open .faq-toggle{transform:rotate(45deg)}
+.faq-a{overflow:hidden;max-height:0;transition:max-height 0.5s var(--ease),padding 0.5s var(--ease);color:var(--mist-mid)}
+.faq-item.open .faq-a{max-height:300px;padding-top:1rem}
+
+/* ===== SIGNAL ===== */
+#signal{padding:clamp(5rem,10vw,10rem) var(--gutter);text-align:center;position:relative;overflow:hidden}
+#signal::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 100%,rgba(182,254,44,0.15),transparent 60%);pointer-events:none}
+.signal-wrap{position:relative;z-index:2;max-width:700px;margin:0 auto}
+.signal-wrap .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--lime)}
+.signal-wrap h2{font-size:clamp(2.5rem,7vw,6rem);margin:1.5rem 0;letter-spacing:-0.035em}
+.signal-wrap h2 em{font-style:normal;background:linear-gradient(180deg,var(--lime),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.signal-wrap > p{color:var(--mist-mid);margin-bottom:2.5rem}
+.signal-form{display:flex;gap:0.5rem;max-width:480px;margin:0 auto;background:var(--ink-1);border:1px solid var(--line-2);border-radius:999px;padding:0.4rem;transition:all 0.3s var(--ease)}
+.signal-form:focus-within{border-color:var(--lime);box-shadow:0 0 0 4px rgba(182,254,44,0.1)}
+.signal-form input{flex:1;background:transparent;border:none;outline:none;color:var(--mist);font-family:var(--body);padding:0.85rem 1.2rem;font-size:0.95rem}
+.signal-form input::placeholder{color:var(--mist-dim)}
+.signal-form button{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;background:var(--lime);color:var(--ink-0);border:none;padding:0 1.5rem;border-radius:999px;cursor:pointer;font-weight:700;transition:all 0.3s var(--ease)}
+.signal-form button:hover{background:var(--cyan)}
+
+footer{padding:4rem var(--gutter) 2rem;border-top:1px solid var(--line);background:var(--ink-1)}
+.footer-grid{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:4rem}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}}
+.footer-brand p{color:var(--mist-dim);font-size:0.9rem;max-width:280px;line-height:1.6;margin-top:1rem}
+.footer-col h4{font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--lime);margin-bottom:1.5rem;font-weight:500}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.75rem}
+.footer-col a{color:var(--mist-mid);text-decoration:none;font-size:0.9rem;transition:color 0.3s var(--ease)}
+.footer-col a:hover{color:var(--mist)}
+.footer-bottom{max-width:var(--container);margin:0 auto;padding-top:2rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:var(--mono);font-size:10px;letter-spacing:0.14em;color:var(--mist-dim);text-transform:uppercase}
+
+@media(prefers-reduced-motion:reduce){*{animation-duration:0.01ms !important;transition-duration:0.01ms !important}.manifesto-line{opacity:1 !important}}
+</style>
+</head>
+
+<body>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+<div id="grain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<nav id="nav">
+  <a href="#" class="brand"><span class="brand-mark"></span>ORBIT</a>
+  <ul class="nav-links">
+    <li><a href="#gallery">Shop</a></li>
+    <li><a href="#customize">Designer</a></li>
+    <li><a href="#why">Why ORBIT</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#gallery" class="nav-cta">Shop Drop ▸</a>
+</nav>
+
+<main>
+
+<!-- SCENE 1: HERO -->
+<section id="hero" class="scene">
+  <div class="scene-inner">
+    <div class="hero-bg-grid" data-hero="grid"></div>
+    <div class="hero-orb a" data-hero="orb-a"></div>
+    <div class="hero-orb b" data-hero="orb-b"></div>
+    <div class="hero-orb c" data-hero="orb-c"></div>
+    <div class="hero-rings" data-hero="rings">
+      <div class="hero-ring r1"></div>
+      <div class="hero-ring r2"></div>
+      <div class="hero-ring r3"></div>
+      <div class="hero-ring r4"></div>
+    </div>
+    <div class="hero-content" data-hero="content">
+      <span class="hero-eyebrow"><span class="dot"></span>System online — Drop 001 inbound</span>
+      <h1 class="hero-title">
+        <span class="word">Built</span> <span class="word">for</span> <span class="word">hoopers.</span><br/>
+        <em><span class="word">Made</span> <span class="word">in</span> <span class="word">orbit.</span></em>
+      </h1>
+      <p class="hero-sub">Premium basketball shorts. Bold colorways. Custom designs. Printed when you order — one of one, never restocked.</p>
+      <div class="hero-ctas">
+        <a href="#gallery" class="btn btn-primary">Enter the Drop <span class="arr">→</span></a>
+        <a href="#customize" class="btn btn-secondary">Design Yours <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">Scroll<div class="line"></div></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Made to order <span class="star">✦</span> Free returns <span class="star">✦</span> 4-way stretch <span class="star">✦</span> Court-engineered <span class="star">✦</span> One of one <span class="star">✦</span> Ships in 5 days <span class="star">✦</span></span>
+    <span>Made to order <span class="star">✦</span> Free returns <span class="star">✦</span> 4-way stretch <span class="star">✦</span> Court-engineered <span class="star">✦</span> One of one <span class="star">✦</span> Ships in 5 days <span class="star">✦</span></span>
+  </div>
+</div>
+
+<!-- SCENE 2: MANIFESTO -->
+<section id="manifesto" class="scene">
+  <div class="scene-inner">
+    <div class="manifesto-bg" data-mf="bg">ORBIT — ORBIT — ORBIT</div>
+    <div class="manifesto-wrap">
+      <h2 class="manifesto-line" data-mf-line="0">Built for <span class="accent">hoopers.</span></h2>
+      <h2 class="manifesto-line" data-mf-line="1">Printed <span class="accent">when you order.</span></h2>
+      <h2 class="manifesto-line" data-mf-line="2"><span class="accent-2">Never the same</span><br/>pair twice.</h2>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE 3: HORIZONTAL GALLERY -->
+<section id="gallery" class="scene">
+  <div class="scene-inner">
+    <div class="gallery-inner">
+      <div class="gallery-head">
+        <span class="eyebrow">Drop 001 — Current rotation</span>
+        <h2>Six colorways. Endless variations.</h2>
+        <p class="sub">Scroll →</p>
+      </div>
+      <div class="h-track-wrap">
+        <div class="h-track" data-htrack>
+          <article class="product">
+            <div class="product-art">
+              <span class="product-tag tag-mag">Best Seller</span>
+              <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-label="Candy Stripe shorts">
+                <defs><pattern id="p1" x="0" y="0" width="20" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#FF3D8A"/><rect x="10" width="10" height="10" fill="#FFB6E1"/></pattern></defs>
+                <rect x="20" y="20" width="200" height="36" rx="4" fill="#FF3D8A"/>
+                <path d="M 20 56 L 220 56 L 232 270 L 134 270 L 122 130 L 118 130 L 106 270 L 8 270 Z" fill="url(#p1)"/>
+                <line x1="120" y1="56" x2="120" y2="130" stroke="#FFFFFF" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="product-info">
+              <div class="product-info-l"><span class="product-name">Candy Stripe</span><span class="product-meta">9" inseam · Pink colorway</span></div>
+              <span class="product-price">$58</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-art">
+              <span class="product-tag tag-lime">New</span>
+              <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-label="Signal Lime shorts">
+                <rect x="20" y="20" width="200" height="36" rx="4" fill="#B6FE2C"/>
+                <path d="M 20 56 L 220 56 L 232 270 L 134 270 L 122 130 L 118 130 L 106 270 L 8 270 Z" fill="#B6FE2C"/>
+                <line x1="120" y1="56" x2="120" y2="130" stroke="#04050A" stroke-width="2.5"/>
+                <text x="120" y="200" text-anchor="middle" fill="#04050A" font-family="Unbounded" font-size="36" font-weight="800">07</text>
+                <rect x="32" y="240" width="40" height="3" fill="#04050A"/>
+                <rect x="168" y="240" width="40" height="3" fill="#04050A"/>
+              </svg>
+            </div>
+            <div class="product-info">
+              <div class="product-info-l"><span class="product-name">Signal Lime</span><span class="product-meta">9" inseam · Custom number</span></div>
+              <span class="product-price">$64</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-art">
+              <span class="product-tag tag-orange">Limited</span>
+              <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-label="Sunset Fade shorts">
+                <defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE14F"/><stop offset="0.5" stop-color="#FF8A3D"/><stop offset="1" stop-color="#FF3D8A"/></linearGradient></defs>
+                <rect x="20" y="20" width="200" height="36" rx="4" fill="url(#g3)"/>
+                <path d="M 20 56 L 220 56 L 232 270 L 134 270 L 122 130 L 118 130 L 106 270 L 8 270 Z" fill="url(#g3)"/>
+                <line x1="120" y1="56" x2="120" y2="130" stroke="#FFFFFF" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="product-info">
+              <div class="product-info-l"><span class="product-name">Sunset Fade</span><span class="product-meta">9" inseam · Gradient print</span></div>
+              <span class="product-price">$68</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-art">
+              <span class="product-tag tag-cyan">Restock</span>
+              <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-label="Polka Storm shorts">
+                <defs><pattern id="p4" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse"><rect width="22" height="22" fill="#0A0C14"/><circle cx="11" cy="11" r="3" fill="#4FE3FF"/></pattern></defs>
+                <rect x="20" y="20" width="200" height="36" rx="4" fill="#0A0C14" stroke="#4FE3FF" stroke-width="1.5"/>
+                <path d="M 20 56 L 220 56 L 232 270 L 134 270 L 122 130 L 118 130 L 106 270 L 8 270 Z" fill="url(#p4)" stroke="#4FE3FF" stroke-width="1"/>
+                <line x1="120" y1="56" x2="120" y2="130" stroke="#4FE3FF" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="product-info">
+              <div class="product-info-l"><span class="product-name">Polka Storm</span><span class="product-meta">9" inseam · Dot print</span></div>
+              <span class="product-price">$58</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-art">
+              <span class="product-tag tag-vio">Drop 001</span>
+              <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-label="Violet Holo shorts">
+                <defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C5CFF"/><stop offset="0.5" stop-color="#FF3D8A"/><stop offset="1" stop-color="#4FE3FF"/></linearGradient></defs>
+                <rect x="20" y="20" width="200" height="36" rx="4" fill="url(#g5)"/>
+                <path d="M 20 56 L 220 56 L 232 270 L 134 270 L 122 130 L 118 130 L 106 270 L 8 270 Z" fill="url(#g5)"/>
+                <text x="120" y="200" text-anchor="middle" fill="#FFFFFF" font-family="Unbounded" font-size="20" font-weight="800" letter-spacing="2">ORBIT</text>
+              </svg>
+            </div>
+            <div class="product-info">
+              <div class="product-info-l"><span class="product-name">Violet Holo</span><span class="product-meta">9" inseam · Holographic</span></div>
+              <span class="product-price">$68</span>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-art">
+              <span class="product-tag tag-sun">Designer</span>
+              <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-label="Blank Canvas — fully customizable">
+                <rect x="20" y="20" width="200" height="36" rx="4" fill="#0A0C14" stroke="#F4F4F0" stroke-width="1.5" stroke-dasharray="5 5"/>
+                <path d="M 20 56 L 220 56 L 232 270 L 134 270 L 122 130 L 118 130 L 106 270 L 8 270 Z" fill="#0A0C14" stroke="#F4F4F0" stroke-width="1.5" stroke-dasharray="5 5"/>
+                <text x="120" y="170" text-anchor="middle" fill="#F4F4F0" font-family="JetBrains Mono" font-size="11" font-weight="500" letter-spacing="2">YOUR</text>
+                <text x="120" y="195" text-anchor="middle" fill="#B6FE2C" font-family="JetBrains Mono" font-size="11" font-weight="500" letter-spacing="2">DESIGN</text>
+                <text x="120" y="220" text-anchor="middle" fill="#F4F4F0" font-family="JetBrains Mono" font-size="11" font-weight="500" letter-spacing="2">HERE</text>
+              </svg>
+            </div>
+            <div class="product-info">
+              <div class="product-info-l"><span class="product-name">Blank Canvas</span><span class="product-meta">Fully customizable</span></div>
+              <span class="product-price">from $72</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="gallery-progress">
+        <span data-galpos>01 / 06</span>
+        <div class="gp-bar"><div class="gp-fill" data-galfill></div></div>
+        <span>Drop 001</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE 4: WHY -->
+<section id="why">
+  <div class="why-grid">
+    <div class="why-sticky">
+      <span class="eyebrow">Why ORBIT</span>
+      <h2>Performance you feel. <br/>Aesthetics you wear.</h2>
+      <p>We don't restock. We don't mass-produce. Every pair is engineered for the court and printed when you order it — so what you wear is genuinely one of one.</p>
+    </div>
+    <div class="why-stack">
+      <div class="usp-card" data-reveal>
+        <span class="num">01 / Engineered fit</span>
+        <div class="icon">◐</div>
+        <h3>Court-engineered cut.</h3>
+        <p>Gusseted construction, no-ride waistband, articulated leg openings. Built around how you actually move on the court.</p>
+      </div>
+      <div class="usp-card" data-reveal>
+        <span class="num">02 / Performance fabric</span>
+        <div class="icon">≋</div>
+        <h3>180gsm pro fabric.</h3>
+        <p>4-way stretch performance polyester. Moisture-wicking, fast-drying, reinforced double-stitch seams. Tested under load.</p>
+      </div>
+      <div class="usp-card" data-reveal>
+        <span class="num">03 / Made to order</span>
+        <div class="icon">◇</div>
+        <h3>Printed for you. Never restocked.</h3>
+        <p>Zero overstock. Zero waste. Your design exists when you place the order. Nobody else gets the same pair.</p>
+      </div>
+      <div class="usp-card" data-reveal>
+        <span class="num">04 / Designer Lab</span>
+        <div class="icon">◈</div>
+        <h3>Build your own pair.</h3>
+        <p>Customize colors, panels, text, jersey number. Order one or one hundred. No minimums, no setup fees.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE 5: STATS -->
+<section id="stats" class="scene">
+  <div class="scene-inner">
+    <div class="stats-wrap">
+      <span class="stats-eyebrow">— Numbers in orbit</span>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-num" data-count="1247">0</div><div class="stat-label">Verified reviews</div></div>
+        <div class="stat"><div class="stat-num" data-count="49" data-decimal="1">0.0</div><div class="stat-label">Avg. rating /5</div></div>
+        <div class="stat"><div class="stat-num" data-count="38000">0</div><div class="stat-label">Pairs in orbit</div></div>
+        <div class="stat"><div class="stat-num" data-count="5">0</div><div class="stat-label">Days to ship</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE 6: CUSTOMIZER -->
+<section id="customize" class="scene">
+  <div class="scene-inner">
+    <div class="cz-inner">
+      <div class="cz-bg"></div>
+      <div class="cz-grid">
+        <div class="cz-text">
+          <span class="eyebrow">Designer Lab</span>
+          <h2>Build a pair <em>nobody else owns.</em></h2>
+          <ol class="cz-steps" data-cz-steps>
+            <li data-step="0"><span class="step-num">01</span> <span>Pick your silhouette and inseam</span></li>
+            <li data-step="1"><span class="step-num">02</span> <span>Customize colors, panels & trim</span></li>
+            <li data-step="2"><span class="step-num">03</span> <span>Add jersey number, text or logo</span></li>
+            <li data-step="3"><span class="step-num">04</span> <span>Preview, order, get it in 5 days</span></li>
+          </ol>
+          <a href="#" class="btn btn-primary">Open the Designer <span class="arr">→</span></a>
+        </div>
+        <div class="cz-vis">
+          <div class="cz-rings">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(244,244,240,0.06)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(182,254,44,0.18)" stroke-width="1" stroke-dasharray="2 6"/>
+              <circle cx="200" cy="200" r="100" fill="none" stroke="rgba(79,227,255,0.2)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="60" fill="none" stroke="rgba(255,61,138,0.16)" stroke-width="1" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
+          <svg class="cz-shorts" data-cz-shorts viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><linearGradient id="czg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B6FE2C"/><stop offset="0.5" stop-color="#4FE3FF"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient></defs>
+            <rect x="20" y="20" width="200" height="36" rx="4" fill="#0A0C14" stroke="url(#czg)" stroke-width="2"/>
+            <path d="M 20 56 L 220 56 L 232 270 L 134 270 L 122 130 L 118 130 L 106 270 L 8 270 Z" fill="#0A0C14" stroke="url(#czg)" stroke-width="2"/>
+            <text x="120" y="200" text-anchor="middle" fill="url(#czg)" font-family="Unbounded" font-size="36" font-weight="800">YOU</text>
+          </svg>
+          <div class="cz-swatch" data-swatch="0" style="background:#B6FE2C;">01</div>
+          <div class="cz-swatch" data-swatch="1" style="background:#4FE3FF;">02</div>
+          <div class="cz-swatch" data-swatch="2" style="background:#FF3D8A;color:#F4F4F0;">03</div>
+          <div class="cz-swatch" data-swatch="3" style="background:#7C5CFF;color:#F4F4F0;">04</div>
+          <div class="cz-swatch" data-swatch="4" style="background:#FFE14F;">05</div>
+          <div class="cz-swatch" data-swatch="5" style="background:#FF8A3D;">06</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE 7: REVIEWS -->
+<section id="reviews">
+  <div class="section-head">
+    <span class="eyebrow">Verified Reviews</span>
+    <h2>Real hoopers. Real pairs.</h2>
+  </div>
+  <div class="reviews-grid">
+    <article class="review" data-reveal>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Fit's exactly what I wanted — gusseted so they don't ride up, fabric breathes way better than my old pair. Designed my own with my number and the print came out clean."</p>
+      <div class="review-author"><div class="author-avatar">MR</div><div><div class="author-name">Marcus R.</div><div class="author-meta"><span class="verified">✓ Verified</span> · Signal Lime</div></div></div>
+    </article>
+    <article class="review" data-reveal>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Bought three pairs for my AAU team — Designer makes it easy to color-match. Quality's legit, stitching held up after a full summer of tournaments."</p>
+      <div class="review-author"><div class="author-avatar">JT</div><div><div class="author-name">Jordan T.</div><div class="author-meta"><span class="verified">✓ Verified</span> · Custom Order</div></div></div>
+    </article>
+    <article class="review" data-reveal>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Didn't expect this level of fabric quality from a small brand. Ships fast. The Sunset Fade is unreal in person — way better than the photos."</p>
+      <div class="review-author"><div class="author-avatar">DK</div><div><div class="author-name">Devin K.</div><div class="author-meta"><span class="verified">✓ Verified</span> · Sunset Fade</div></div></div>
+    </article>
+  </div>
+</section>
+
+<!-- SCENE 8: FAQ -->
+<section id="faq">
+  <div class="faq-wrap">
+    <div class="section-head" style="margin-bottom:2.5rem;">
+      <span class="eyebrow">FAQ</span>
+      <h2>The fine print.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-q">How long until my pair ships? <span class="faq-toggle">+</span></div><div class="faq-a">Every pair is printed and stitched after you order. Production runs 3–5 business days, then 2–5 days US shipping. International varies by region.</div></div>
+      <div class="faq-item"><div class="faq-q">What's the return policy? <span class="faq-toggle">+</span></div><div class="faq-a">Free returns within 30 days on non-customized core styles. Custom designs are final sale — but if anything's wrong on our end, we remake it free.</div></div>
+      <div class="faq-item"><div class="faq-q">Can I design my own pair? <span class="faq-toggle">+</span></div><div class="faq-a">Yes. The Designer lets you customize colors per panel, add jersey number, drop in text, pick stripe colors. No minimum order.</div></div>
+      <div class="faq-item"><div class="faq-q">What fabric and inseam? <span class="faq-toggle">+</span></div><div class="faq-a">180gsm performance polyester with 4-way stretch and moisture-wicking finish. Standard inseam is 9".</div></div>
+      <div class="faq-item"><div class="faq-q">How does sizing run? <span class="faq-toggle">+</span></div><div class="faq-a">True to size — XS to 3XL. Full measurements per size are on every product page.</div></div>
+      <div class="faq-item"><div class="faq-q">Do you ship internationally? <span class="faq-toggle">+</span></div><div class="faq-a">Yes — US, Canada, UK, EU, Australia. Shipping cost and ETA show up at checkout.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE 9: SIGNAL -->
+<section id="signal">
+  <div class="signal-wrap" data-reveal>
+    <span class="eyebrow">Drop Signal</span>
+    <h2><em>Get drops</em> before they launch.</h2>
+    <p>Early access on new colorways, designer releases, and team-set pricing. No spam. Unsubscribe in one click.</p>
+    <form class="signal-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Signal received ✓';">
+      <input type="email" placeholder="you@yourteam.com" required aria-label="Email" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="brand"><span class="brand-mark"></span>ORBIT</a>
+      <p>Premium basketball shorts. Made-to-order. Performance fabric. Built for hoopers, never restocked.</p>
+    </div>
+    <div class="footer-col"><h4>Shop</h4><ul><li><a href="#gallery">Drop 001</a></li><li><a href="#customize">Designer Lab</a></li><li><a href="#">Team Orders</a></li><li><a href="#">Gift Cards</a></li></ul></div>
+    <div class="footer-col"><h4>Support</h4><ul><li><a href="#faq">FAQ</a></li><li><a href="#">Size Guide</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="#">Contact</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 ORBIT — Made-to-order</span><span>Privacy · Terms</span></div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+
+const clamp = (v,a=0,b=1) => Math.max(a, Math.min(b, v));
+const smooth = (v) => v*v*(3 - 2*v);
+
+/* ===== STARFIELD ===== */
+const canvas = document.getElementById('stars');
+const ctx = canvas.getContext('2d');
+let stars = [], w, h;
+function resizeStars(){
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+  const count = Math.min(200, Math.floor((w*h)/8000));
+  stars = [];
+  for(let i=0; i<count; i++){
+    stars.push({x:Math.random()*w, y:Math.random()*h, z:Math.random()*2+0.3, v:Math.random()*0.25+0.05, tw:Math.random()*Math.PI*2});
+  }
+}
+resizeStars();
+window.addEventListener('resize', resizeStars);
+function drawStars(){
+  ctx.clearRect(0,0,w,h);
+  for(const s of stars){
+    s.y += s.v;
+    if(s.y > h) s.y = 0;
+    s.tw += 0.02;
+    const a = 0.3 + ((Math.sin(s.tw)+1)*0.5)*0.5;
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.z, 0, Math.PI*2);
+    ctx.fillStyle = `rgba(244,244,240,${a})`;
+    ctx.fill();
+  }
+  requestAnimationFrame(drawStars);
+}
+drawStars();
+
+/* ===== CURSOR ===== */
+const cursor = document.getElementById('cursor');
+let mx = window.innerWidth/2, my = window.innerHeight/2;
+let gx = mx, gy = my;
+window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+(function ac(){
+  gx += (mx - gx) * 0.12;
+  gy += (my - gy) * 0.12;
+  cursor.style.transform = `translate(${gx}px, ${gy}px) translate(-50%, -50%)`;
+  requestAnimationFrame(ac);
+})();
+
+/* ===== NAV + PROGRESS ===== */
+const nav = document.getElementById('nav');
+const progress = document.getElementById('progress');
+function updateScrollUI(){
+  const sy = window.scrollY;
+  const docH = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.width = (sy / docH * 100) + '%';
+  if(sy > 40) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+}
+
+/* Scene progress: returns 0 when scene top hits viewport top,
+   1 when scene bottom is one viewport above. */
+function sceneProgress(el){
+  const rect = el.getBoundingClientRect();
+  const total = rect.height - window.innerHeight;
+  if(total <= 0) return -1;
+  return clamp(-rect.top / total);
+}
+
+/* ===== SCENE 1: HERO ===== */
+const heroScene = document.getElementById('hero');
+const heroGrid = heroScene.querySelector('[data-hero="grid"]');
+const heroOrbA = heroScene.querySelector('[data-hero="orb-a"]');
+const heroOrbB = heroScene.querySelector('[data-hero="orb-b"]');
+const heroOrbC = heroScene.querySelector('[data-hero="orb-c"]');
+const heroRings = heroScene.querySelector('[data-hero="rings"]');
+const heroContent = heroScene.querySelector('[data-hero="content"]');
+const heroWords = heroScene.querySelectorAll('.hero-title .word');
+
+function updateHero(){
+  const p = sceneProgress(heroScene);
+  if(p < 0) return;
+  heroGrid.style.transform = `scale(${1 + p*0.6})`;
+  heroGrid.style.opacity = 1 - p*0.5;
+  heroOrbA.style.transform = `translate(${-p*80}px, ${-p*60}px) scale(${1 + p*0.3})`;
+  heroOrbB.style.transform = `translate(${p*80}px, ${p*60}px) scale(${1 + p*0.3})`;
+  heroOrbC.style.transform = `translateX(-50%) translateY(${p*100}px) scale(${1 + p*0.4})`;
+  heroRings.style.transform = `translate(-50%, -50%) scale(${1 + p*0.5})`;
+  heroRings.style.opacity = 1 - p*0.8;
+  heroContent.style.transform = `translateY(${-p*120}px)`;
+  heroContent.style.opacity = 1 - smooth(clamp((p - 0.4)/0.6));
+  heroWords.forEach((w, i) => {
+    const wp = clamp((p*2 - i*0.04)/0.3);
+    const wo = smooth(wp);
+    w.style.opacity = wo;
+    w.style.transform = `translateY(${(1-wo)*40}px)`;
+  });
+}
+
+/* ===== SCENE 2: MANIFESTO ===== */
+const mfScene = document.getElementById('manifesto');
+const mfLines = mfScene.querySelectorAll('[data-mf-line]');
+const mfBg = mfScene.querySelector('[data-mf="bg"]');
+const N_LINES = mfLines.length;
+function updateManifesto(){
+  const p = sceneProgress(mfScene);
+  if(p < 0){
+    mfLines.forEach(l => { l.style.opacity = 0; });
+    return;
+  }
+  mfBg.style.transform = `translateX(${-p*30}vw)`;
+  const slice = 1 / N_LINES;
+  mfLines.forEach((line, i) => {
+    const lineStart = i * slice;
+    const lp = clamp((p - lineStart) / slice);
+    let opacity, scale, blur;
+    if(lp < 0.5){
+      const t = lp / 0.5;
+      opacity = smooth(t);
+      scale = 0.85 + smooth(t)*0.15;
+      blur = (1 - smooth(t)) * 8;
+    } else {
+      const t = (lp - 0.5) / 0.5;
+      opacity = 1 - smooth(t);
+      scale = 1 + smooth(t)*0.15;
+      blur = smooth(t) * 8;
+    }
+    if(i === N_LINES - 1 && p > (lineStart + 0.5*slice)){
+      const hold = clamp((p - (lineStart + 0.5*slice)) / (1 - (lineStart + 0.5*slice)));
+      opacity = 1 - smooth(hold) * 0.4;
+      scale = 1 + smooth(hold)*0.1;
+      blur = smooth(hold) * 3;
+    }
+    line.style.opacity = opacity;
+    line.style.transform = `scale(${scale})`;
+    line.style.filter = `blur(${blur}px)`;
+  });
+}
+
+/* ===== SCENE 3: HORIZONTAL GALLERY ===== */
+const galScene = document.getElementById('gallery');
+const htrack = galScene.querySelector('[data-htrack]');
+const galPos = galScene.querySelector('[data-galpos]');
+const galFill = galScene.querySelector('[data-galfill]');
+function getMaxTranslate(){
+  if(!htrack) return 0;
+  return Math.max(0, htrack.scrollWidth - window.innerWidth + 80);
+}
+function updateGallery(){
+  const p = sceneProgress(galScene);
+  if(p < 0) return;
+  const maxT = getMaxTranslate();
+  htrack.style.transform = `translateX(${-p*maxT}px)`;
+  const total = htrack.children.length;
+  const cur = Math.min(total, Math.floor(p*total)+1);
+  galPos.textContent = String(cur).padStart(2,'0') + ' / ' + String(total).padStart(2,'0');
+  galFill.style.transform = `scaleX(${p})`;
+}
+
+/* ===== SCENE 5: STATS COUNTERS ===== */
+const counters = document.querySelectorAll('[data-count]');
+let countersStarted = false;
+function maybeStartCounters(){
+  if(countersStarted) return;
+  const r = document.getElementById('stats').getBoundingClientRect();
+  if(r.top < window.innerHeight*0.7 && r.bottom > 0){
+    countersStarted = true;
+    counters.forEach(c => animateCount(c));
+  }
+}
+function animateCount(el){
+  const target = parseInt(el.dataset.count, 10);
+  const decimal = el.dataset.decimal === '1';
+  const start = performance.now();
+  function tick(now){
+    const t = Math.min(1, (now - start)/1800);
+    const eased = 1 - Math.pow(1 - t, 3);
+    const val = target * eased;
+    if(decimal) el.textContent = (val/10).toFixed(1);
+    else if(target >= 1000) el.textContent = Math.round(val).toLocaleString();
+    else el.textContent = Math.round(val);
+    if(t < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+/* ===== SCENE 6: CUSTOMIZER ===== */
+const czScene = document.getElementById('customize');
+const czShorts = czScene.querySelector('[data-cz-shorts]');
+const czSwatches = czScene.querySelectorAll('[data-swatch]');
+const czSteps = czScene.querySelectorAll('[data-cz-steps] li');
+function updateCustomizer(){
+  const p = sceneProgress(czScene);
+  if(p < 0) return;
+  const activeStep = Math.min(3, Math.floor(p*4));
+  czSteps.forEach((s, i) => s.classList.toggle('active', i === activeStep));
+  const rot = Math.sin(p*Math.PI*2)*4;
+  const scale = 1 + Math.sin(p*Math.PI)*0.05;
+  czShorts.style.transform = `rotate(${rot}deg) scale(${scale})`;
+  const vis = czScene.querySelector('.cz-vis');
+  if(!vis) return;
+  const vw = vis.clientWidth, vh = vis.clientHeight;
+  if(vw === 0) return;
+  const radius = Math.min(vw, vh) * 0.42;
+  const cx = vw/2, cy = vh/2;
+  const total = czSwatches.length;
+  czSwatches.forEach((sw, i) => {
+    const baseAngle = (i/total) * Math.PI*2;
+    const angle = baseAngle + p*Math.PI*2;
+    const x = cx + Math.cos(angle)*radius - 28;
+    const y = cy + Math.sin(angle)*radius - 28;
+    sw.style.transform = `translate(${x}px, ${y}px)`;
+  });
+}
+
+/* ===== REVEAL ON SCROLL ===== */
+const revealEls = document.querySelectorAll('[data-reveal], .usp-card, .review');
+const revealIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      revealIO.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+revealEls.forEach(el => revealIO.observe(el));
+
+/* ===== FAQ ===== */
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => item.classList.toggle('open'));
+});
+
+/* ===== MASTER LOOP ===== */
+let ticking = false;
+function onScroll(){
+  if(ticking) return;
+  ticking = true;
+  requestAnimationFrame(() => {
+    updateScrollUI();
+    updateHero();
+    updateManifesto();
+    updateGallery();
+    updateCustomizer();
+    maybeStartCounters();
+    ticking = false;
+  });
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('resize', onScroll);
+
+/* Initial state for hero words */
+heroWords.forEach(w => { w.style.opacity = 0; w.style.transform = 'translateY(40px)'; });
+
+onScroll();
+})();
+</script>
+
+</body>
+</html>
