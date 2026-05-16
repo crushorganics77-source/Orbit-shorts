@@ -70,17 +70,17 @@ nav.scrolled{background:rgba(8,8,12,0.72);backdrop-filter:blur(20px) saturate(16
 .banner-content{position:relative;z-index:3;height:100%;display:flex;padding:0 var(--gutter);color:var(--cream)}
 .photo-hint{position:absolute;top:1rem;left:1rem;font-family:var(--mono);font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.4);z-index:4;padding:0.35rem 0.65rem;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.3);backdrop-filter:blur(8px);border-radius:2px}
 
-/* Image Hero — full image w/ pinned parallax reveal */
-#hero-banner{position:relative;width:100%;height:380vh;background:var(--bg);z-index:5}
+/* Image Hero — height set dynamically by JS based on image dimensions */
+#hero-banner{position:relative;width:100%;min-height:100vh;background:var(--bg);z-index:5}
 .hero-pin{position:sticky;top:0;height:100vh;width:100%;overflow:hidden;background:var(--bg)}
 .hero-slide{position:absolute;top:0;left:0;width:100%;will-change:transform}
 .hero-slide img{width:100%;height:auto;display:block;user-select:none;-webkit-user-drag:none;pointer-events:none}
 .hero-fallback{display:none;width:100%;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:2rem;color:var(--mist);font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;line-height:1.8}
 .hero-fallback code{color:var(--lav);font-family:var(--mono);background:var(--bg-2);padding:0.2rem 0.5rem;border-radius:3px}
-.shop-area{position:absolute;top:20%;left:50%;transform:translateX(-50%);width:14%;min-width:120px;height:4%;min-height:36px;z-index:5;cursor:pointer;border-radius:2px;transition:background 0.3s var(--ease)}
+.shop-area{position:absolute;top:20%;left:50%;transform:translateX(-50%);width:14%;height:4%;min-width:120px;min-height:36px;z-index:5;cursor:pointer;border-radius:2px;transition:background 0.3s var(--ease)}
 .shop-area:hover{background:rgba(255,255,255,0.08)}
 .hero-pin .scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:6}
-@media(max-width:768px){#hero-banner{height:280vh}.shop-area{top:19%;width:22%;height:3.5%}}
+@media(max-width:768px){.shop-area{top:19%;width:24%;height:3.5%;min-height:30px}}
 
 .scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--cream);opacity:0.75;display:flex;flex-direction:column;align-items:center;gap:0.5rem;z-index:10}
 .scroll-cue .line{width:1px;height:32px;background:linear-gradient(to bottom,var(--cream),transparent);animation:scroll-bob 2s ease-in-out infinite}
@@ -285,56 +285,36 @@ footer{padding:4rem var(--gutter) 2rem;background:var(--bg-2);border-top:1px sol
 
     <a href="shop.html#skyline" class="coll-card" data-reveal>
       <div class="coll-card-bg">
-        <svg viewBox="0 0 400 540" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs><linearGradient id="cc-sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A1F35"/><stop offset="1" stop-color="#08080C"/></linearGradient></defs>
-          <rect width="400" height="540" fill="url(#cc-sk)"/>
-          <circle cx="320" cy="100" r="22" fill="#F4F4F0" opacity="0.85"/>
-          <g fill="#F4F4F0" opacity="0.4"><circle cx="60" cy="80" r="1"/><circle cx="140" cy="50" r="1"/><circle cx="220" cy="90" r="1"/><circle cx="80" cy="160" r="1"/><circle cx="280" cy="140" r="1"/><circle cx="180" cy="180" r="1"/></g>
-          <path d="M 0 540 L 0 360 L 30 360 L 30 340 L 60 340 L 60 380 L 90 380 L 90 310 L 130 310 L 130 290 L 170 290 L 170 350 L 200 350 L 200 320 L 240 320 L 240 280 L 280 280 L 280 330 L 320 330 L 320 370 L 360 370 L 360 350 L 400 350 L 400 540 Z" fill="#08080C"/>
-          <g fill="#FFD480" opacity="0.6"><rect x="40" y="370" width="3" height="3"/><rect x="70" y="395" width="3" height="3"/><rect x="100" y="330" width="3" height="3"/><rect x="140" y="320" width="3" height="3"/><rect x="180" y="370" width="3" height="3"/><rect x="220" y="340" width="3" height="3"/><rect x="260" y="310" width="3" height="3"/><rect x="290" y="350" width="3" height="3"/><rect x="330" y="390" width="3" height="3"/></g>
-        </svg>
+        <img src="SKYLINE_4.png" alt="TEMP Skyline collection — Sunset" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
       </div>
       <div class="coll-card-content">
         <span class="coll-card-num">01 — Collection</span>
         <span class="coll-card-name">SKYLINE</span>
-        <p class="coll-card-desc">Cityscapes across performance mesh. Night skylines, sunset palms, mountain horizons. Six designs.</p>
+        <p class="coll-card-desc">Cityscapes across performance mesh. Night skylines, sunset palms, mountain horizons. Five designs.</p>
         <span class="coll-card-cta">Browse Skyline <span>→</span></span>
       </div>
     </a>
 
     <a href="shop.html#waves" class="coll-card" data-reveal>
       <div class="coll-card-bg">
-        <svg viewBox="0 0 400 540" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs><linearGradient id="cc-wv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1F5C"/><stop offset="0.5" stop-color="#1E40FF"/><stop offset="1" stop-color="#0A0A0F"/></linearGradient></defs>
-          <rect width="400" height="540" fill="url(#cc-wv)"/>
-          <g stroke="#F4F4F0" stroke-width="2" fill="none" opacity="0.6"><path d="M 0 200 Q 100 160, 200 200 T 400 200"/><path d="M 0 260 Q 100 220, 200 260 T 400 260" opacity="0.75"/><path d="M 0 320 Q 100 280, 200 320 T 400 320" opacity="0.5"/><path d="M 0 380 Q 100 340, 200 380 T 400 380" opacity="0.35"/></g>
-          <path d="M 0 540 L 0 420 Q 100 380, 200 420 T 400 420 L 400 540 Z" fill="#0A0A0F" opacity="0.7"/>
-          <g stroke="#FFFFFF" stroke-width="3" fill="none"><path d="M 30 160 Q 70 130, 110 165"/><path d="M 130 180 Q 170 150, 210 185"/><path d="M 250 175 Q 290 145, 330 180"/></g>
-        </svg>
+        <img src="Waves_1.png" alt="TEMP Waves collection — Great" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
       </div>
       <div class="coll-card-content">
         <span class="coll-card-num">02 — Collection</span>
         <span class="coll-card-name">WAVES</span>
-        <p class="coll-card-desc">Ocean prints across the mesh. Great Wave studies, stormy nights, calm tides. Six designs.</p>
+        <p class="coll-card-desc">Ocean prints across the mesh. Great Wave studies, stormy nights, calm tides. Eight designs.</p>
         <span class="coll-card-cta">Browse Waves <span>→</span></span>
       </div>
     </a>
 
     <a href="shop.html#flux" class="coll-card" data-reveal>
       <div class="coll-card-bg">
-        <svg viewBox="0 0 400 540" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs><linearGradient id="cc-fl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E2545"/><stop offset="0.5" stop-color="#5B3A9C"/><stop offset="1" stop-color="#1A1428"/></linearGradient></defs>
-          <rect width="400" height="540" fill="url(#cc-fl)"/>
-          <path d="M -50 100 Q 100 30, 200 150 Q 300 280, 450 200" stroke="#B8A4FF" stroke-width="30" fill="none" opacity="0.8"/>
-          <path d="M -50 200 Q 100 130, 200 250 Q 300 380, 450 300" stroke="#F4F4F0" stroke-width="26" fill="none" opacity="0.9"/>
-          <path d="M -50 300 Q 100 230, 200 350 Q 300 480, 450 400" stroke="#B8A4FF" stroke-width="30" fill="none" opacity="0.6"/>
-          <path d="M -50 400 Q 100 330, 200 450 Q 300 580, 450 500" stroke="#F4F4F0" stroke-width="26" fill="none" opacity="0.5"/>
-        </svg>
+        <img src="FLUX_3.png" alt="TEMP Flux collection — Neon" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
       </div>
       <div class="coll-card-content">
         <span class="coll-card-num">03 — Collection</span>
         <span class="coll-card-name">FLUX</span>
-        <p class="coll-card-desc">Abstract swirls in color theory. Wavy patterns, brush strokes, motion in print. Six designs.</p>
+        <p class="coll-card-desc">Abstract swirls in color theory. Wavy patterns, brush strokes, motion in print. Seven designs.</p>
         <span class="coll-card-cta">Browse Flux <span>→</span></span>
       </div>
     </a>
@@ -485,15 +465,29 @@ function sceneProgress(el){const r=el.getBoundingClientRect();const t=r.height-i
 
 const heroBanner=document.getElementById('hero-banner');
 const heroSlide=heroBanner?heroBanner.querySelector('[data-hero-slide]'):null;
+const heroImg=heroSlide?heroSlide.querySelector('img'):null;
+function setHeroHeight(){
+  if(!heroBanner||!heroImg||!heroImg.naturalWidth)return;
+  const vh=innerHeight;
+  const vw=innerWidth;
+  const aspect=heroImg.naturalHeight/heroImg.naturalWidth;
+  const imgH=vw*aspect;
+  heroBanner.style.height=Math.max(imgH,vh)+'px';
+}
 function updateHeroImg(){
   if(!heroBanner||!heroSlide)return;
   const r=heroBanner.getBoundingClientRect();
   const total=r.height-innerHeight;
-  if(total<=0)return;
+  if(total<=0){heroSlide.style.transform='';return}
   const p=Math.max(0,Math.min(1,-r.top/total));
   const imgH=heroSlide.offsetHeight;
   const maxT=Math.max(0,imgH-innerHeight);
   heroSlide.style.transform=`translateY(${-p*maxT}px)`;
+}
+if(heroImg){
+  if(heroImg.complete&&heroImg.naturalWidth)setHeroHeight();
+  else heroImg.addEventListener('load',setHeroHeight);
+  addEventListener('resize',()=>{setHeroHeight();updateHeroImg()});
 }
 
 const mfScene=document.getElementById('manifesto');
